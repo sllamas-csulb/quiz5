@@ -1,0 +1,45 @@
+<%- include("_header") -%>
+
+<h2> Find Products AJAX</h2>
+
+<h4>Total number of records in the database: <%= totRecs %></h4>
+
+<!-- Not using bootstrap, just a simple form that you may enhance -->
+<!-- Using AJAX, not form action -->
+<form>
+    <table>
+        <!-- (carvin, carmake, carmodel, carmileage) -->
+        <tr>
+            <td><label for="carvin">VIN</label>:</td>
+            <td><input type="text" name="carvin" id="carvin" type="number" /></td>
+            <td>(equal)</td>
+        </tr>
+        <tr>
+            <td><label for="carmake">Make</label>:</td>
+            <td><input type="text" name="carmake" id="carmake" /></td>
+            <td>(starts with)</td>
+        </tr>
+        <tr>
+            <td><label for="carmodel">Model</label>:</td>
+            <td><input type="text" name="carmodel" id="carmodel" /></td>
+            <td>(starts with)</td>
+        </tr>
+        <tr>
+            <td><label for="carmileage">Mileage</label>:</td>
+            <td><input type="text" name="carmileage" id="carmileage" /></td>
+            <td>(greater than or equal)</td>
+        </tr>
+        <tr>
+            <td span="2">
+                <input type="submit" value="Find" />
+                <input type="reset" value="Reset" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+<div id="output"></div>
+
+<script src="searchajax.js"></script>
+
+<%- include("_footer") -%>   

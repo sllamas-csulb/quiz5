@@ -1,0 +1,40 @@
+<%- include("_header") -%>
+
+    <%- include("_search_form") -%>
+
+    <!--
+    <% if(message !== "success") { %>
+        <h1>We Encountered an Error</h1>
+        <p><%= message %></p>
+    <% } else if( model.length == 0 ) { %>
+        <h2>No Records Found!</h2>
+    <% } else { %>
+        <h2>There are <%= model.length %> cars in the database</h2>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">VIN</th>
+                    <th scope="col">Make</th>
+                    <th scope="col">Model</th>
+                    <th scope="col">Mileage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% model.forEach(car => { %>
+                    <tr>
+                        <td><%= car.carvin %></td>
+                        <td><%= car.carmake %></td>
+                        <td><%= car.carmodel %></td>
+                        <td><%= car.carmileage %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    <% } %>
+    -->
+
+    <div id="output"></div>
+
+    <script src="searchajax.js"></script>
+
+<%- include("_footer") -%>

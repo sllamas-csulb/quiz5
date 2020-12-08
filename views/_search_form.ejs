@@ -1,0 +1,43 @@
+<br/>
+<div class="form-group row">
+<label class="col-form-label col-sm-2" for="carvin">VIN</label>
+<div class="col-sm-8">
+<input autofocus class="form-control" name="carvin" id="carvin" value="<%= car.carvin %>" />
+</div>
+<label class="col-form-label col-sm-2" for="carvin">(equals)</label>
+</div>
+
+<div class="form-group row">
+<label class="col-form-label col-sm-2" for="carmake">Make</label>
+<div class="col-sm-7">
+<input class="form-control" name="carmake" value="<%= car.carmake %>" />
+</div>
+<label class="col-form-label col-sm-2" for="carmake">(begins with)</label>
+</div>
+
+<div class="form-group row">
+<label class="col-form-label col-sm-2" for="carmodel">Model</label>
+<div class="col-sm-7">
+<input class="form-control" name="carmodel" value="<%= car.carmodel %>" />
+</div>
+<label class="col-form-label col-sm-2" for="carmodel">(begins with)</label>
+</div>
+
+  
+<div class="form-group row">
+<label class="col-form-label col-sm-2" for="carmileage">Mileage</label>
+<div class="col-sm-7">
+<input class="form-control" name="carmileage" id="carmileage" value="<%= car.carmileage %>" />
+</div>
+<label class="col-form-label col-sm-2" for="carmileage">(less than or equal to)</label>
+</div>
+  
+<div class="form-group row">
+<label class="col-form-label col-sm-2"></label>
+<div class="col-sm-10">
+<input type="submit" value="Find" class="btn btn-default btn-success" />
+<input type="button" value="Reset" class="btn btn-default btn-secondary" />
+</div>
+</div>
+
+</div>
